@@ -22,7 +22,7 @@ import psutil
 import json
 
 
-bot = commands.Bot(description='BAsics can do a lot more.....', command_prefix=commands.when_mentioned_or('p!'))
+bot = commands.Bot(description='BAsics can do a lot more.....', command_prefix=commands.when_mentioned_or('p?'))
 
 
 class BAsics():
@@ -145,7 +145,7 @@ class BAsics():
         await ctx.send(file=discord.File("SHIT.png"))
         os.system("rm SHIT.png")
         
-      @commands.command()
+     @commands.command()
      async def neko(ctx):
          ''''sends cute dog pics'''
          r = requests.get("https://nekos.life/api/neko").json()
