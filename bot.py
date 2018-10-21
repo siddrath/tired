@@ -1,14 +1,26 @@
 import discord
-import aiohttp
-import datetime
-import inspect
-import os
-import io
-import re
-import asyncio
-import random
 from discord.ext import commands
+from pokedex import pokedex
+import datetime
+import random
+import requests
+import aiohttp
+import re
+from random import randint
+from random import choice
+import asyncio
+import os
 from PIL import Image, ImageDraw, ImageFont
+import io
+from paginator import Paginator
+import inspect
+from tabulate import tabulate
+import csv
+import ast
+import re
+import psutil
+import json
+
 
 bot = commands.Bot(description='BAsics can do a lot more.....', command_prefix=commands.when_mentioned_or('p!'))
 
