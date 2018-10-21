@@ -132,6 +132,204 @@ class BAsics():
         x.save("SHIT.png")
         await ctx.send(file=discord.File("SHIT.png"))
         os.system("rm SHIT.png")
+        
+        @commands.command(pass_context=True)
+async def pepe(ctx, user: discord.Member = None):
+    """kiss someone!"""
+    user = user or ctx.message.author
+
+    pepe = "**  kissed you.{1}!**"
+
+    choices = ["http://i.imgur.com/vpIyEue.png",
+               "http://i.imgur.com/0koMC0v.jpg",
+               "http://i.imgur.com/9Q6KMZa.png",
+               "http://i.imgur.com/54xy6jr.png",
+               "http://i.imgur.com/QvCngiJ.jpg",
+               "http://i.imgur.com/ftWgrOE.jpg",
+               "http://i.imgur.com/rhDSqRv.jpg",
+               "http://i.imgur.com/89NZ3zM.jpg",
+               "http://i.imgur.com/I4cIH5b.png",
+               "http://i.imgur.com/GIFc4uX.png",
+               "http://i.imgur.com/bgShJpZ.png",
+               "http://i.imgur.com/jpfPLyn.png",
+               "http://i.imgur.com/pZeYoej.png",
+               "http://i.imgur.com/M8V9WKB.jpg",
+               "http://i.imgur.com/ZBzHxNk.jpg",
+               "http://i.imgur.com/xTyJ6xa.png",
+               "http://i.imgur.com/TOozxRQ.png",
+               "http://i.imgur.com/Eli5HdZ.png",
+               "http://i.imgur.com/pkikqcA.jpg",
+               "http://i.imgur.com/gMF8eo5.png",
+               "http://i.imgur.com/HYh8BUm.jpg",
+               "http://i.imgur.com/ZGVrRye.jpg",
+               "http://i.imgur.com/Au4F1px.jpg",
+               "http://i.imgur.com/gh36k9y.jpg",
+               "http://i.imgur.com/MHDoRuN.png",
+               "http://i.imgur.com/V3MJfyK.png",
+               "http://i.imgur.com/QGGTipc.jpg",
+               "http://i.imgur.com/PRFrTgz.png",
+               "http://i.imgur.com/9UBJrwM.jpg",
+               "http://i.imgur.com/WQY9Vhb.jpg",
+               "http://i.imgur.com/sIbQdou.jpg",
+               "http://i.imgur.com/LlUMg00.jpg",
+               "http://i.imgur.com/MmijlWa.png",
+               "http://i.imgur.com/i0CrtrX.png",
+               "http://i.imgur.com/Dfpudwp.jpg",
+               "http://i.imgur.com/hhg0wVF.gif",
+               "http://i.imgur.com/7VDiIHN.jpg",
+               "http://i.imgur.com/nxvXpNV.jpg",
+               "http://i.imgur.com/DZYEjrW.gif",
+               "http://i.imgur.com/mnyQ0Rh.jpg",
+               "http://i.imgur.com/aHawbbs.jpg",
+               "http://i.imgur.com/g8cCHV7.jpg",
+               "http://i.imgur.com/E2cMU7Y.jpg",
+               "http://i.imgur.com/PkmcgGF.jpg",
+               "http://i.imgur.com/7qLQ1xl.jpg",
+               "http://i.imgur.com/7qLQ1xl.jpg",
+               "http://i.imgur.com/arSsPwf.png",
+               "http://i.imgur.com/xcYh4iC.png",
+               "http://i.imgur.com/9692WND.jpg",
+               "http://i.imgur.com/diAK5Nu.jpg",
+               "http://i.imgur.com/zDs0tRW.jpg",
+               "http://i.imgur.com/PEM87nV.jpg",
+               "http://i.imgur.com/zlCzlND.jpg",
+               "http://i.imgur.com/n0OHxDl.jpg",
+               "http://i.imgur.com/TQRf1WH.png",
+               "http://i.imgur.com/zi9ad15.jpg",
+               "http://i.imgur.com/b8A6Qke.jpg",
+               "http://i.imgur.com/YuLapEu.png",
+               "http://i.imgur.com/fWFXkY1.jpg",
+               "http://i.imgur.com/i5vNvWU.png",
+               "http://i.imgur.com/oXwUwtJ.jpg",
+               "http://i.imgur.com/hadm4jV.jpg",
+               "http://i.imgur.com/gbCvkqo.png",
+               "http://i.imgur.com/wDiiWBG.jpg",
+               "http://i.imgur.com/Mvghx4V.jpg",
+               "http://i.imgur.com/SnTAjiJ.jpg",
+               "http://i.imgur.com/QvMYBnu.png",
+               "http://i.imgur.com/WkzPvfB.jpg",
+               "http://i.imgur.com/PfAm4ot.png",
+               "http://i.imgur.com/SIk4a45.png",
+               "http://i.imgur.com/aISFmQq.jpg",
+               "http://i.imgur.com/sMQkToE.png",
+               "http://i.imgur.com/7i3cBrP.png",
+               "http://i.imgur.com/1oMSz6e.png",
+               "http://i.imgur.com/nVCRnRv.png",
+               "http://i.imgur.com/FzWmxmi.jpg",
+               "http://i.imgur.com/rpUI20F.jpg",
+               "http://i.imgur.com/FDmnFDZ.jpg",
+               "http://i.imgur.com/40Z1Yyg.jpg",
+               "http://i.imgur.com/osy5Nu4.png",
+               "http://i.imgur.com/4w81MSS.jpg",
+               "http://i.imgur.com/qRXQFYa.png",
+               "http://i.imgur.com/A1af62j.jpg",
+               "http://i.imgur.com/wOc6fUe.jpg",
+               "http://i.imgur.com/Z6ILiJ4.jpg",
+               "http://i.imgur.com/537UpEJ.jpg",
+               "http://i.imgur.com/HDc6kko.png",
+               "http://i.imgur.com/oyLpuXq.jpg",
+               "http://i.imgur.com/iCmGtJS.jpg",
+               "http://i.imgur.com/MjpnlQm.png",
+               "http://i.imgur.com/c6MWRQ9.jpg"]
+
+
+    image = random.choice(choices)
+
+    embed = discord.Embed(description=f"""{user.name}""", colour=discord.Colour(0xba4b5b))
+    embed.add_field(name=' Random', value=f''' ~~pepe~~''', inline=False)
+    embed.set_image(url=image)
+
+
+    await ctx.send(embed=embed)
+
+
+
+@commands.cooldown(1,120 , commands.BucketType.user)
+@commands.command()
+async def spawn(ctx, user: discord.Member = None): 
+    user = user or ctx.message.author
+     
+
+
+    spawn = "**  A wild .{1}!**"
+
+    
+    choices = ["http://www.pokestadium.com/sprites/xy/shiny/xerneas.gif",
+                 "http://www.pokestadium.com/sprites/xy/xerneas-active.gif",
+                 "http://www.pokestadium.com/sprites/xy/zekrom.gif",
+                 "http://www.pokestadium.com/sprites/xy/charizard.gif",
+                 "http://www.pokestadium.com/sprites/xy/shiny/charizard.gif",
+                 "http://www.pokestadium.com/sprites/xy/yveltal.gif",
+                 "http://www.pokestadium.com/sprites/xy/shiny/yveltal.gif",
+                 "http://www.pokestadium.com/sprites/xy/raikou.gif",
+                 "http://www.pokestadium.com/sprites/xy/shiny/raikou.gif",
+                 "https://cdn.discordapp.com/attachments/386324037552308224/503050326627319809/PokecordSpawn.jpg",
+                 "https://cdn.discordapp.com/attachments/386324037552308224/503050526603214848/PokecordSpawn.jpg",
+                 "https://cdn.discordapp.com/attachments/386324037552308224/503050157286227968/PokecordSpawn.jpg",
+                 "https://cdn.discordapp.com/attachments/482056981931098112/502861665180581908/PokecordSpawn.jpg",
+                 "https://img.nijimen.net/uploads/topic/wide_image/18879/78ea52a0-5e3c-48ee-bbe4-8ff6fe38764b.jpg"
+                 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE1NX0EsJ0SUcP1LEdglNTN12UIatAoXfA1rxuz1fkL8Q8vWL9zQ",
+                 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOENKjnLEl2H8OdMbOaVqJT0QWr0toBNsWfKa3wQWh_mj827UsLg",
+                 "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo8_G9cOLmqWNGNFh1BxSx_bkpNOxIW7sv2bqlClQgI_u9TiVx"]
+      
+    image = random.choice(choices)
+
+    embed = discord.Embed(description=f"""{user.name}""", colour=discord.Colour(0xba4b5b))
+    embed.add_field(name=' A wild pokémon has appeared!', value=f''' ~~Guess the pokemon~~''', inline=False)
+    embed.set_image(url=image)
+
+
+
+    await ctx.send(embed=embed)
+
+
+@bot.command()
+async def cat(ctx):
+        """Get a random cat image!
+
+        **Usage:** `g_dog`
+
+        **Permission:** User"""
+        isVideo = True
+        while isVideo:
+            r = requests.get('https://random.dog/woof.json')
+            js = r.json()
+            if js['url'].endswith('.mp4'):
+                pass
+            else:
+                isVideo = False
+        colours = [0x1abc9c, 0x11806a, 0x2ecc71, 0x1f8b4c, 0x3498db, 0x206694, 0x9b59b6, 0x71368a, 0xe91e63, 0xad1457, 0xf1c40f, 0xc27c0e, 0xa84300, 0xe74c3c, 0x992d22, 0x95a5a6, 0x607d8b, 0x979c9f, 0x546e7a]
+        col = int(random.random() * len(colours))
+        content = [":dog: Don't be sad! This doggy wants to play with you!", "You seem lonely, {0.mention}. Here, have a dog. They're not as nice as cats, but enjoy!".format(ctx.message.author), "Weuf, woof, woooooooooof. Woof you.", "Pupper!", "Meow... wait wrong animal."]
+        con = int(random.random() * len(content))
+        em = discord.Embed(color=colours[col])
+        em.set_image(url=js['url'])
+        await ctx.send(content=content[con], embed=em)
+
+
+
+
+@commands.command()
+async def neko(ctx):
+    ''''sends cute dog pics'''
+    r = requests.get("https://nekos.life/api/neko").json()
+
+    colours = [0x1abc9c, 0x11806a, 0x2ecc71, 0x1f8b4c, 0x3498db, 0x206694, 0x9b59b6, 0x71368a, 0xe91e63, 0xad1457, 0xf1c40f, 0xc27c0e, 0xa84300, 0xe74c3c, 0x992d22, 0x95a5a6, 0x607d8b, 0x979c9f, 0x546e7a]
+    col = int(random.random() * len(colours))
+    content = [":neko: Don't be sad! This neko wants to play with you!", "You seem lonely, {0.mention}. Here, have a neko. They're not as nice , but enjoy!".format(ctx.message.author), "Weuf, woof, woooooooooof. Woof you.", "Pupper!", "Meow... wait its neko."]
+    con = int(random.random() * len(content))
+    embed=discord.Embed()
+    embed.set_image(url=r["neko"])
+    await ctx.send(content=content[con],embed=embed)
+
+@commands.command(hidden = True)
+async def code(ctx, command):
+        ''': getting the code for command'''
+
+        a = inspect.getsource(bot.get_command(command).callback)
+        embed = discord.Embed(title='Code', description="```py\n"+a+"```",color=discord.Colour.dark_red())
+        embed.set_thumbnail(url='https://scontent.fdel3-1.fna.fbcdn.net/v/t1.0-9/20155639_1952222755056855_6450365686627691750_n.png?oh=0b2c4ecd1409396b05f71c31dd07dd2d&oe=5AE7B998')
+        await ctx.send(embed=embed)
 
 
 
